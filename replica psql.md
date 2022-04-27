@@ -138,3 +138,16 @@ bash-4.4$ pg_basebackup -h 192.168.187.136 -U repuser --checkpoint=fast \
       -D /var/lib/pgsql/13/data/ -R --slot=some_name -C
  ```
 
+### B3: Let’s figure out what pg_basebackup has done:
+
+```
+ls -l
+```
+- Đại khái nó như vậy:
+
+
+### B4: Tạo thử DB trên node 1 xem có sync sang node 2 chưa
+
+### B5: Test RW trên node 2 xem có fail không
+
+## Success!
