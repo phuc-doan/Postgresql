@@ -87,7 +87,7 @@ CREATE ROLE
 
 *Of course, you can also set a password. What is important here is that the user has the REPLICATION flag set. The basic idea is to avoid using the superuser to stream the transaction log from the primary to the replica.*
 
-###  edit file pg_hba.conf
+###  Edit file pg_hba.conf
 
 - Đây là file mô tả các cài đặt xác thực liên quan đến máy client
 
@@ -109,5 +109,32 @@ systemctl restart postgresql-13
 ```
 
 
+## Ở phía Slave
 
+### B1: Stop psql-13
+
+ ```
+  systemctl stop postgresql-13
+ ```
  
+ 
+ - chúng ta cần đảm bảo rằng thư mục dữ liệu trống:
+
+```
+cd /var/lib/pgsql/13/data/
+ls
+rm -f *
+ls #kiểm tra lại lần cuối
+```
+
+
+### B2: 
+
+```
+[root@node2 data]# su postgres
+bash-4.4$ pwd
+/var/lib/pgsql/13/data
+bash-4.4$ pg_basebackup -h 192.168.187.136 -U repuser --checkpoint=fast \
+      -D /var/lib/pgsql/13/data/ -R --slot=some_name -C
+ ```
+
