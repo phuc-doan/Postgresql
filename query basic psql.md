@@ -7,4 +7,5 @@
 
 - https://hocdevops.com/khong-phan-loai/cac-cau-lenh-co-ban-de-lam-viec-voi-postgresql/
 
-## Now let's get start
+## Now let's get started!
+ 
