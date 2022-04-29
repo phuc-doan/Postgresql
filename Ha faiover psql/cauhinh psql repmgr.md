@@ -280,6 +280,13 @@ For example:
 ## Step 11: test thôi
 
 - Tạo 1 db trên master xem slave đồng bộ
+
+![image](https://user-images.githubusercontent.com/83824403/165929555-8b0b9cc6-4584-440c-83f6-a18bfc04f0f1.png)
+
+
+
+
+
 - Kết quả nhuư sau
 
 ![image](https://user-images.githubusercontent.com/83824403/165928949-8e2b6ea5-15c7-456d-931b-af8f6eb9a21f.png)
