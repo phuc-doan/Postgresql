@@ -232,7 +232,8 @@ promote_command='/usr/pgsql-12/bin/repmgr standby promote -f /var/lib/pgsql/repm
 
 
 
-![image](https://user-images.githubusercontent.com/83824403/165928028-f01e1110-037a-4107-8de6-787bd84c45d7.png)
+![image](https://user-images.githubusercontent.com/83824403/165929287-0e66b255-f023-4d72-bbba-f84ef2258bbb.png)
+
 
 
 
