@@ -159,6 +159,11 @@ ALTER USER repmgr WITH NOSUPERUSER;
 - Create a repmgr.conf on the master server with the following entries:
 
 ```
+ REPMGRD_ENABLED=yes
+ 
+repmgrd_service_start_command='sudo systemctl repmgr12 start'
+repmgrd_service_stop_command='sudo systemctl repmgr12 stop'
+
 cluster='failovertest'
 
 node_id=1
@@ -211,6 +216,11 @@ follow_command='/usr/pgsql-12/bin/repmgr standby follow -f /var/lib/pgsql/repmgr
 
 
 ```
+REPMGRD_ENABLED=yes
+
+repmgrd_service_start_command='sudo systemctl repmgr12 start'
+repmgrd_service_stop_command='sudo systemctl repmgr12 stop'
+
 node_id=2
 
 node_name=slave2
@@ -298,11 +308,48 @@ For example:
 
 
 
+- Thử off node Primary xem Standby có promote lên làm master không
+
+```
+[root@Primary ~]# systemctl stop postgresql-12
+```
+
+- Sang node Stanby check repmgr status
+
+```
+[root@Standby ~]# su postgres
+bash-4.2$ /usr/pgsql-12/bin/repmgr -f /etc/repmgr/12/repmgr.conf cluster show
+```
+
+![image](https://user-images.githubusercontent.com/83824403/166254716-01b98a35-5b82-4ffa-b4e5-5b00b62d010c.png)
 
 
+=>> Đơn giản như vậy là tạm thành công
 
 
+- Trực tiếp create DB trên Server Standby ( đã được promote) 
 
+
+![image](https://user-images.githubusercontent.com/83824403/166255658-7d3472d1-8074-40ca-8273-823059ea345f.png)
+
+
+# 2. Tiến hành cài cắm thêm Haproxy và Xinet cho cụm để có tính năng LB
+
+## 2.1 Khởi động các service 
+-Bên trên lúc test chúng ta có tắt bật tùy ý 1 vài service, bây giowf chúng ta ON hết nó lên
+- Tiến hành cài Xinetd & Haproxy
+
+```
+
+yum -y install xinetd
+
+yum -y install haproxy
+```
+- Tắt hết sạch firewall trên 2 node để đỡ phải mở port <3
+
+- Tiến hành chỉnh sửa file config của xinetd.conf và haproxy.conf lần lượt như sau
+
+**Xinetd.conf**
 
 
 
