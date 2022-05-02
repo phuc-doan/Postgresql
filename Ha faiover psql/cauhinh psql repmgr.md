@@ -362,12 +362,9 @@ yum -y install haproxy
 - https://www.enterprisedb.com/postgres-tutorials/how-implement-repmgr-postgresql-automatic-failover
 
 
+- https://docs.vmware.com/en/VMware-Cloud-Director/10.0/com.vmware.vcloud.install.doc/GUID-B3DFDBB7-1F53-4A94-96F2-7784A1E47A6D.html
 
-
-
-
-
-
+- https://groups.google.com/g/repmgr/c/FVLdMRmT7tg
 
 
 
