@@ -1,3 +1,5 @@
+-https://www.2ndquadrant.com/en/blog/how-to-automate-postgresql-12-replication-and-failover-with-repmgr-part-1/
+
 # 1\. Giới thiệu
 
 PostgreSQL streaming replication sử dụng service Repmgr để cấu hình replication, failover phục vụ nhu cầu HA cho Database Postgre Cluster
