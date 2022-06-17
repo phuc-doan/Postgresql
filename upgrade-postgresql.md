@@ -1,23 +1,29 @@
-## Upgrade Version lên một version mới bất kì.
+## Target:
+
+  ### -  Lên version mới nhất (14.4)
+  
+  ### -  Rollback về version (9.6) - Downgrade về sersion thấp hơn (Bất kỳ)
+  
+  ### -  Upgrade lại version (14.4)
+
+
+
+
+
+
+### Upgrade Version lên một version mới bất kì.
 
 - Giả sử hệ thống đang chạy Psql-9.6
 
 ![image](https://user-images.githubusercontent.com/83824403/174271090-6569fef1-e3d0-4a71-a275-7759ff7b2596.png)
 
 
-- Target:
 
-
-  +) Lên version mới nhất (14.4)
-  
-  +) Rollback về version (9.6) - Downgrade về sersion thấp hơn (Bất kỳ)
-  
-  +) Upgrade lại version (14.4)
   
 
   
   
-## - Demo: Từ 9.6 lên 14.4
+### - Demo: Từ 9.6 lên 14.4
 
 - Tạo 1 db mới là demodb để chút nữa sang ver 14.4 check thử xem có bị mất dữ liệu không
 
@@ -90,7 +96,7 @@ service postgresql restart
 
 
 
-## Rollback ngược về version 9.6 
+### Rollback ngược về version 9.6 
 
 
 
@@ -153,7 +159,7 @@ sudo pg_dropcluster 14 main
 ![image](https://user-images.githubusercontent.com/83824403/174283207-2d70ac50-b8e3-4cd3-a4db-e51f13323570.png)
 
 
-## Upgrade lại version khác (VD:13)
+### Upgrade lại version khác (VD:13)
 
 - Đừng từ version thấp hơn (9.6) vẫn tải và add repo của các version cao hơn như bình thường ( ở đây là VD với psql-13)
 
@@ -198,6 +204,8 @@ service postgresql restart
 
 
 - DB test vẫn còn nguyên và DB đã lên version 13 đúng mong muốn
+
+
 ![image](https://user-images.githubusercontent.com/83824403/174284560-8f3938b9-aff1-4836-9cab-f77475f7c462.png)
 
 
