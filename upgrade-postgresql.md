@@ -25,7 +25,7 @@
   
 ### - Demo: Từ 9.6 lên 14.4
 
-- Tạo 1 db mới là demodb để chút nữa sang ver 14.4 check thử xem có bị mất dữ liệu không
+- Tạo 1 db mới là **demodb** để chút nữa sang ver 14.4 check thử xem có bị mất dữ liệu không
 
 ![image](https://user-images.githubusercontent.com/83824403/174279211-590e5d47-b67a-4816-976f-5222503f1b47.png)
 
@@ -52,7 +52,7 @@ sudo apt -y install postgresql-14
 - Tiến hành upgrade từ ver 9.6 lên 14
 
 
-- Chạy pg_lsclusters, các cụm chính 9.6 và 14 của bạn phải "online".
+- Chạy **`pg_lsclusters`**, các cụm chính 9.6 và 14 của bạn phải "online".
 
 ![image](https://user-images.githubusercontent.com/83824403/174274328-f38bcf63-b989-4508-8f29-24c6761d8489.png)
 
@@ -88,13 +88,15 @@ service postgresql restart
 ![image](https://user-images.githubusercontent.com/83824403/174275094-49eca0c6-507a-4c87-bffc-56c31b0a7e2d.png)
 
 
-### =>> DB đang chạy ở verison 14.4 và list xem còn db tạo ở version 9.6 không
+#### =>> DB đang chạy ở verison 14.4 và list xem còn db tạo ở version 9.6 không
 
 
 
 ![image](https://user-images.githubusercontent.com/83824403/174279469-193befaa-0d9f-42ef-815e-533bd56d7fcb.png)
 
 
+
+- KQ: DB **demo** vẫn bình thường trên version mới
 
 ### Rollback ngược về version 9.6 
 
@@ -127,7 +129,7 @@ sudo apt-get install postgresql-9.6
 
 
 
-- Các bước tương tự như trên nhưng nếu rollback thì phải dumpdb. DB `demo` đã tạo trước đó sẽ không auto từ bản 14.4 về 9.6
+- Các bước tương tự như trên nhưng nếu rollback thì phải **`dumpdb`**. DB `demo` đã tạo trước đó sẽ không auto từ bản 14.4 về 9.6
 
 #### Tham khảo:
 
@@ -141,6 +143,8 @@ sudo pg_dropcluster 14 main --stop
 ```
 
 - Bản 14 cluster đuọc hiển thị now be "down".
+
+
 ```
 pg_lsclusters 
 Ver Cluster Port Status Owner    Data directory               Log file
