@@ -4,7 +4,7 @@
   
   ### -  Rollback về version (9.6) - Downgrade về version thấp hơn (Bất kỳ)
   
-  ### -  Upgrade lại version (14.4)
+  ### -  Upgrade lại version (13)
 
 
 
