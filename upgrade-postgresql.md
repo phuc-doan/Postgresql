@@ -133,8 +133,9 @@ sudo apt-get install postgresql-9.6
 
 #### Tham khảo:
 
+## A
 ![image](https://user-images.githubusercontent.com/83824403/174282679-f40e4d82-d8ef-45b9-a289-0af5f550008e.png)
-
+## A
 
 - Stop bản 14 cluster and drop it.
 
@@ -154,8 +155,10 @@ Ver Cluster Port Status Owner    Data directory               Log file
 
 - Check that the upgraded cluster works, then remove the 14 cluster.
 
-sudo pg_dropcluster 14 main
 
+```
+sudo pg_dropcluster 14 main
+```
 
 
 - Database lúc này đã về bản 9.6 và không còn DB demo
