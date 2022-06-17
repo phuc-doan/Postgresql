@@ -2,7 +2,7 @@
 
   ### -  Lên version mới nhất (14.4)
   
-  ### -  Rollback về version (9.6) - Downgrade về sersion thấp hơn (Bất kỳ)
+  ### -  Rollback về version (9.6) - Downgrade về version thấp hơn (Bất kỳ)
   
   ### -  Upgrade lại version (14.4)
 
