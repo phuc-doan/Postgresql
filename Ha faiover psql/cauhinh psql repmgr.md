@@ -17,6 +17,8 @@ Repmgr là một tool opensource dùng dể quản lý replication và failovẻ
     
 
 # 3\. Cấu hình PostgreSQL master-standby sử dụng repmgr
+
+
 ![image](https://user-images.githubusercontent.com/83824403/181224915-047ab1c9-af32-4a2d-8a89-5fc116995340.png)
 
 
@@ -25,11 +27,13 @@ Repmgr là một tool opensource dùng dể quản lý replication và failovẻ
 ![image](https://user-images.githubusercontent.com/83824403/181224955-e5052ba5-8176-4108-b9b7-cb9f10fcbbf7.png)
 
 
-PostgreSQL:
+- PostgreSQL:
+
 PG-Master: 10.3.54.116
 PG-slave: 10.3.54.102
 
-Haproxy:
+- Haproxy:
+
 VIP: 10.3.54.139
 Haproxy-01: 10.3.53.253
 Haproxy-02: 10.3.55.106
