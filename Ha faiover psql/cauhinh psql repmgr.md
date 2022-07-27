@@ -1,30 +1,7 @@
 -https://www.2ndquadrant.com/en/blog/how-to-automate-postgresql-12-replication-and-failover-with-repmgr-part-1/
 
 
-## Let's get started!
-
-1. Install PostgreSQL
-
-2. Install repmgr
-
-3. Configure PostgreSQL
-
-4. Create users
-
-5. Configure pg_hba.conf
-
-6. Configure the repmgr file
-
-7. Register the primary server
-
-8. Build/clone the standby server
-
-9. Register the standby server
-
-10. Start repmgrd daemon process
-
-
-
+# Let's get started!
 
 
 # 1\. Giới thiệu
@@ -40,12 +17,13 @@ Repmgr là một tool opensource dùng dể quản lý replication và failovẻ
     
 
 # 3\. Cấu hình PostgreSQL master-standby sử dụng repmgr
+![image](https://user-images.githubusercontent.com/83824403/181224915-047ab1c9-af32-4a2d-8a89-5fc116995340.png)
 
-<img src="img/1_g-5E4ZhDe9LOjvMBdsIptg.png" />
 
 ## 3.1. Mô hình
 
-<img src="img/lab.png" />
+![image](https://user-images.githubusercontent.com/83824403/181224955-e5052ba5-8176-4108-b9b7-cb9f10fcbbf7.png)
+
 
 PostgreSQL:
 PG-Master: 10.3.54.116
