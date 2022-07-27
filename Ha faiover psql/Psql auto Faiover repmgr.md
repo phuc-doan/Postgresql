@@ -1,4 +1,4 @@
--https://www.2ndquadrant.com/en/blog/how-to-automate-postgresql-12-replication-and-failover-with-repmgr-part-1/
+
 
 
 # Let's get started!
@@ -479,6 +479,7 @@ vrrp_instance VI_1 {
 
 - https://groups.google.com/g/repmgr/c/FVLdMRmT7tg`
 
+-https://www.2ndquadrant.com/en/blog/how-to-automate-postgresql-12-replication-and-failover-with-repmgr-part-1/
 
 ```
 setsebool -P haproxy_connect_any=1
