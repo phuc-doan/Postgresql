@@ -120,3 +120,4 @@ phucdv=# drop table thong_tin;
 
 
 ### B6 Tiến hành recovery DB 
+![image](https://user-images.githubusercontent.com/83824403/182829400-2defa580-d983-484d-9fcd-9584d14f8940.png)
